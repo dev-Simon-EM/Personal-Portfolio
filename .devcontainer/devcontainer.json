@@ -1,0 +1,8 @@
+{
+  "name": "Portfolio Page Design - Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
+  "forwardPorts": [5173],
+  "postCreateCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install",
+  "remoteUser": "vscode",
+  "workspaceFolder": "/workspace"
+}
