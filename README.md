@@ -1,37 +1,47 @@
 
-  # Personal portfolio
+ # Simon Emmanuel Madalla | Portfolio
 
-  This is a code bundle for Portfolio Page Design. The original project is available at https://www.figma.com/design/Fh01RzO6UrqXQ7AxwNTXFu/Portfolio-Page-Design.
+ Personal portfolio for Simon Emmanuel Madalla, bringing together live web projects, development experience, and a growing focus on cybersecurity and networking.
 
-  ## Running the code
+ ## Live Portfolio
 
-  Run `npm i` to install the dependencies.
+ <https://dev-simon-em.github.io/Personal-Portfolio/>
 
-  Run `npm run dev` to start the development server.
-  
-    Recommended: open this project in VS Code and use the provided Dev Container (`.devcontainer`) to get a consistent environment with Node and pnpm installed automatically.
-  
-    - To open in the Dev Container: In VS Code use **Remote-Containers: Open Folder in Container** and select this workspace. The container will run `pnpm install` automatically after it is created.
-  
-    Local setup (if you prefer to run locally):
-  
-    - With npm (requires Node.js installed):
-  
-  ```powershell
-  npm install
-  npm run dev
-  ```
-  
-    - With pnpm (recommended if you use the repo's pnpm workspace):
-  
-  ```powershell
-  # enable corepack (bundled with newer Node.js) or install pnpm
-  corepack enable
-  pnpm install
-  pnpm run dev
-  ```
-  
-    Troubleshooting:
-    - If `npm` or `pnpm` is not found, install Node.js from https://nodejs.org/ (LTS recommended). On Windows you can enable `corepack` to use `pnpm`.
-    - Dev Container users do not need to install Node locally — the container image includes Node and will run the post-create install.
+ ## Featured Work
+
+ - [GoodAngel D Travel and Tour](https://dev-simon-em.github.io/GoodAngel-D-Travel-and-Tour/) — travel, tours, and study-abroad website.
+ - [Dall Global Ventures](https://dev-simon-em.github.io/Dall-Global-Ventures/) — agricultural trading and supply website.
+ - [Dall Tech](https://dev-simon-em.github.io/Dall-Tech/) — technology and cybersecurity services website.
+ - [Heavens Gate Atelier](https://dev-simon-em.github.io/heavens-gate-atelier/) — fashion atelier services and enquiries website.
+ - [Portfolio](https://dev-simon-em.github.io/Personal-Portfolio/) — this portfolio.
+
+## Team Projects
+
+- [Squadlink](https://quadlink-frontend.vercel.app/) — digital local-commerce platform; [team repository](https://github.com/zumunchiYohanna/Hackathon-project). The provided Vercel URL currently returns `DEPLOYMENT_NOT_FOUND`. The team earned 2nd Runner-Up (3rd place) at Nascomsoft Hackathon 2.0 on 10 October 2026.
+- [Sazu Study Hub](https://sazu-study-hub.vercel.app/) — collaborative learning platform; [team repository](https://github.com/wisdomdanladi01-hash/sazu-study-hub).
+- Zes AI Companion — collaborative project not yet hosted live; [team repository](https://github.com/zumunchiYohanna/Zes-Ai-Companion).
+
+This portfolio also presents skills, a learning timeline, training, and contact links.
+
+ ## Built With
+
+ - React and TypeScript
+ - Vite
+ - Tailwind CSS
+ - Lucide icons
+
+ ## Run Locally
+
+ Requires Node.js and pnpm (or npm).
+
+ ```sh
+ pnpm install
+ pnpm run dev
+ ```
+
+ Build the static site with:
+
+ ```sh
+ pnpm run build
+ ```
   

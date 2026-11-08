@@ -30,7 +30,8 @@ import {
 // ─── TYPES ────────────────────────────────────────────────
 interface NavItem { label: string; href: string }
 interface SkillCard { icon: React.ElementType; title: string; desc: string; category: string }
-interface Project { title: string; desc: string; tags: string[]; image: string; url: string; badge: string }
+interface Project { title: string; desc: string; tags: string[]; image: string; url: string; repoUrl: string; badge: string }
+interface Collaboration { title: string; desc: string; repoUrl: string; liveUrl?: string; status: string; image?: string; imageAlt?: string; liveAvailable?: boolean }
 interface TimelineItem { year: string; title: string; desc: string; done: boolean }
 interface CertCard { org: string; title: string; desc: string; status: "earned" | "in-progress" | "planned"; icon: React.ElementType }
 
@@ -40,7 +41,9 @@ const NAV: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Certifications", href: "#certifications" },
+  { label: "Recognition", href: "#achievements" },
+  { label: "Contributions", href: "#contributions" },
+  { label: "Training", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -69,52 +72,91 @@ const SKILLS: SkillCard[] = [
 const PROJECTS: Project[] = [
   {
     title: "GoodAngel D Travel and Tour",
-    desc: "Professional business website for a travel and tour company, featuring responsive design, destination showcases, and booking inquiry flow.",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+    desc: "A responsive travel and study-abroad website with tours, visa information, destination pages, and enquiry pathways.",
+    tags: ["HTML", "CSS", "JavaScript"],
     image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=640&h=380&fit=crop&auto=format",
-    url: "#",
+    url: "https://dev-simon-em.github.io/GoodAngel-D-Travel-and-Tour/",
+    repoUrl: "https://github.com/dev-Simon-EM/GoodAngel-D-Travel-and-Tour",
     badge: "Live Site",
   },
   {
     title: "Personal Portfolio",
-    desc: "This portfolio site — a developer and cybersecurity showcase built with React and modern tooling to represent technical depth and design sensibility.",
-    tags: ["React", "TypeScript", "Tailwind"],
+    desc: "My portfolio for selected projects, team contributions, and learning milestones.",
+    tags: ["React", "TypeScript", "Vite"],
     image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=640&h=380&fit=crop&auto=format",
-    url: "#",
+    url: "https://dev-simon-em.github.io/Personal-Portfolio/",
+    repoUrl: "https://github.com/dev-Simon-EM/Personal-Portfolio",
     badge: "This Site",
   },
   {
     title: "Dall Tech",
-    desc: "Technology solutions concept platform designed to present digital services, consultancy offerings, and tech product capabilities for modern businesses.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    desc: "A technology and cybersecurity services website for web development, consulting, and digital solutions.",
+    tags: ["React", "TypeScript", "Vite"],
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=640&h=380&fit=crop&auto=format",
-    url: "#",
-    badge: "Concept",
+    url: "https://dev-simon-em.github.io/Dall-Tech/",
+    repoUrl: "https://github.com/dev-Simon-EM/Dall-Tech",
+    badge: "Live Site",
   },
   {
     title: "Dalglobal Ventures",
-    desc: "Business website for an agricultural trading company, presenting products, supply chain information, and client contact pathways.",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive"],
+    desc: "An agricultural trading and supply website for grain products, sourcing, distribution, and customer enquiries.",
+    tags: ["React", "TypeScript", "Vite"],
     image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=640&h=380&fit=crop&auto=format",
-    url: "#",
-    badge: "Business",
+    url: "https://dev-simon-em.github.io/Dall-Global-Ventures/",
+    repoUrl: "https://github.com/dev-Simon-EM/Dall-Global-Ventures",
+    badge: "Live Site",
+  },
+  {
+    title: "Heavens Gate Atelier",
+    desc: "A fashion atelier site presenting clothing repairs, alterations, and direct customer enquiries.",
+    tags: ["React", "TypeScript", "Vite"],
+    image: "https://images.pexels.com/photos/4622423/pexels-photo-4622423.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    url: "https://dev-simon-em.github.io/heavens-gate-atelier/",
+    repoUrl: "https://github.com/dev-Simon-EM/heavens-gate-atelier",
+    badge: "Live Site",
+  },
+];
+
+const COLLABORATIONS: Collaboration[] = [
+  {
+    title: "Squadlink",
+    desc: "A digital local-commerce platform developed with a team for Nascomsoft Hackathon 2.0.",
+    repoUrl: "https://github.com/zumunchiYohanna/Hackathon-project",
+    liveUrl: "https://quadlink-frontend.vercel.app/",
+    status: "Deployment unavailable",
+    image: "previews/squadlink-scenery.jpg",
+    imageAlt: "Campus and delivery rider artwork from the Squadlink project repository",
+    liveAvailable: false,
+  },
+  {
+    title: "Sazu Study Hub",
+    desc: "A collaborative learning platform.",
+    repoUrl: "https://github.com/wisdomdanladi01-hash/sazu-study-hub",
+    liveUrl: "https://sazu-study-hub.vercel.app/",
+    status: "Live platform",
+    image: "previews/sazu-study-hub.png",
+    imageAlt: "Screenshot of the live Sazu Study Hub learning platform",
+    liveAvailable: true,
+  },
+  {
+    title: "Zes AI Companion",
+    desc: "A collaborative AI companion project; it is not hosted live yet.",
+    repoUrl: "https://github.com/zumunchiYohanna/Zes-Ai-Companion",
+    status: "In development",
   },
 ];
 
 const JOURNEY: TimelineItem[] = [
-  { year: "2022", title: "Web Development Foundation", desc: "Started building responsive websites with HTML, CSS, and JavaScript. Launched first client sites including GoodAngel D and Dalglobal Ventures.", done: true },
-  { year: "2023", title: "Programming Expansion", desc: "Deepened Python programming skills, learned Git/GitHub workflows, and began exploring database design principles.", done: true },
-  { year: "2024", title: "Cisco Cybersecurity Fundamentals", desc: "Completed Cisco Networking Academy Introduction to Cybersecurity, gaining structured knowledge in threat landscapes, network security, and data protection.", done: true },
-  { year: "2024", title: "Ethical Hacking Practice", desc: "Began hands-on practice with Hack The Box challenges and security labs, applying theoretical knowledge to real-world vulnerability scenarios.", done: true },
-  { year: "2025", title: "Penetration Testing", desc: "Pursuing CompTIA Security+ and CEH certifications while building a structured pentesting methodology.", done: false },
-  { year: "Future", title: "Security Engineering", desc: "Goal: Transition into a professional security engineering or SOC analyst role within a technology-forward organisation.", done: false },
+  { year: "2022", title: "Web Development Foundation", desc: "Started building responsive websites with HTML, CSS, and JavaScript. Early projects included GoodAngel D and Dalglobal Ventures.", done: true },
+  { year: "2023", title: "Programming Expansion", desc: "Expanded into Python, Git and GitHub workflows, and database fundamentals.", done: true },
+  { year: "2024", title: "Cisco Cybersecurity Fundamentals", desc: "Completed Cisco Networking Academy's Introduction to Cybersecurity course.", done: true },
+  { year: "2024", title: "Ethical Hacking Practice", desc: "Began hands-on practice with security labs and cybersecurity learning platforms.", done: true },
+  { year: "2025", title: "Security Learning", desc: "Continued developing a structured foundation in cybersecurity and penetration-testing concepts.", done: true },
+  { year: "2026", title: "Nascomsoft Hackathon 2.0", desc: "Concluded the hackathon with Squadlink on 10 October 2026, earning 2nd Runner-Up (3rd place) with the team.", done: true },
 ];
 
 const CERTS: CertCard[] = [
-  { org: "Cisco Networking Academy", title: "Introduction to Cybersecurity", desc: "Foundational cybersecurity course covering threat landscapes, network security, data privacy, and endpoint protection. Verified credential.", status: "earned", icon: Network },
-  { org: "CompTIA", title: "Security+", desc: "Industry-recognised entry-level security certification covering risk management, cryptography, and network security.", status: "in-progress", icon: Shield },
-  { org: "Hack The Box", title: "Certified Penetration Testing Specialist", desc: "Practical penetration testing certification with hands-on lab environments and real-world scenario assessments.", status: "planned", icon: Target },
-  { org: "EC-Council", title: "Certified Ethical Hacker (CEH)", desc: "Structured ethical hacking certification validating skills across 20 attack vectors and defensive countermeasures.", status: "planned", icon: Lock },
+  { org: "Cisco Networking Academy", title: "Introduction to Cybersecurity", desc: "Completed foundational training in cybersecurity concepts, threats, and protection practices.", status: "earned", icon: Network },
 ];
 
 // ─── UTILITIES ─────────────────────────────────────────────
@@ -195,15 +237,27 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           ))}
         </div>
-        <a
-          href={project.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-xs font-medium text-primary hover:text-accent transition-colors group/link"
-        >
-          View Project
-          <ExternalLink size={12} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
-        </a>
+        <div className="flex items-center gap-5">
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-xs font-medium text-primary hover:text-accent transition-colors group/link"
+          >
+            Live Website
+            <ExternalLink size={12} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+          </a>
+          <a
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`View ${project.title} source on GitHub`}
+            className="inline-flex items-center gap-2 text-xs font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <Github size={14} />
+            Source
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -297,7 +351,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const ids = ["home", "about", "skills", "projects", "journey", "certifications", "contact"];
+    const ids = ["home", "about", "skills", "projects", "achievements", "contributions", "journey", "certifications", "contact"];
     const observer = new IntersectionObserver(
       (entries) => entries.forEach(e => { if (e.isIntersecting) setActiveSection(e.target.id); }),
       { threshold: 0.3 }
@@ -327,7 +381,7 @@ export default function App() {
   return (
     <div
       className="min-h-screen bg-background text-foreground"
-      style={{ fontFamily: "'Inter', sans-serif" }}
+      style={{ fontFamily: "'DM Sans', sans-serif" }}
     >
       {/* ── NAVIGATION ─────────────────────────────────── */}
       <header
@@ -345,12 +399,12 @@ export default function App() {
             className="flex items-center gap-2.5 group"
           >
             <div className="w-8 h-8 rounded-lg bg-primary/20 border border-primary/40 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-              <Shield size={15} className="text-primary" />
+              <span className="font-serif text-lg font-semibold text-primary">S</span>
             </div>
             <div>
               <span
                 className="text-sm font-semibold text-foreground tracking-tight"
-                style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 Simon E.M
               </span>
@@ -358,7 +412,7 @@ export default function App() {
           </a>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-1">
             {NAV.map(({ label, href }) => (
               <button
                 key={label}
@@ -377,12 +431,12 @@ export default function App() {
           <div className="flex items-center gap-3">
             <button
               onClick={() => handleNav("#contact")}
-              className="hidden md:flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
+              className="hidden xl:flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
             >
               Hire Me
             </button>
             <button
-              className="md:hidden w-9 h-9 flex items-center justify-center rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors"
+              className="xl:hidden w-9 h-9 flex items-center justify-center rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors"
               onClick={() => setMenuOpen(v => !v)}
             >
               {menuOpen ? <X size={18} /> : <Menu size={18} />}
@@ -392,7 +446,7 @@ export default function App() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-border">
+          <div className="xl:hidden bg-background/95 backdrop-blur-xl border-b border-border">
             <div className="max-w-6xl mx-auto px-6 py-4 space-y-1">
               {NAV.map(({ label, href }) => (
                 <button
@@ -410,19 +464,17 @@ export default function App() {
 
       {/* ── HERO ───────────────────────────────────────── */}
       <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
-        <HeroBg />
         <div className="relative max-w-6xl mx-auto px-6 pt-24 pb-16 w-full">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
             {/* Left */}
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-8">
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span className="font-mono text-xs text-primary tracking-widest">Available for Opportunities</span>
+              <div className="inline-flex items-center gap-2 border-b border-primary/40 pb-2 mb-7">
+                <span className="font-mono text-xs text-primary tracking-widest">DEVELOPMENT · COLLABORATION · SECURITY</span>
               </div>
 
               <h1
                 className="text-5xl md:text-6xl font-bold tracking-tight mb-3 leading-[1.08]"
-                style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                style={{ fontFamily: "'Playfair Display', serif" }}
               >
                 Simon
                 <br />
@@ -432,32 +484,28 @@ export default function App() {
               </h1>
 
               <div className="flex flex-wrap gap-2 mb-6 mt-5">
-                {["Cybersecurity Enthusiast", "Developer", "Technology Builder"].map(role => (
-                  <span
-                    key={role}
-                    className="font-mono text-xs px-3 py-1.5 rounded-full border border-border bg-secondary text-muted-foreground"
-                  >
+                {["Web Developer", "Digital Product Builder", "Cybersecurity Learner"].map(role => (
+                  <span key={role} className="font-mono text-xs px-3 py-1.5 border-l-2 border-accent bg-secondary text-muted-foreground">
                     {role}
                   </span>
                 ))}
               </div>
 
               <p className="text-muted-foreground text-base leading-relaxed mb-10 max-w-md">
-                A technology-focused professional passionate about cybersecurity, secure software development,
-                and building practical digital solutions that are reliable and resilient.
+                I build useful digital experiences, collaborate on products for real communities, and keep growing my knowledge of networking and cybersecurity.
               </p>
 
               <div className="flex flex-wrap gap-4">
                 <button
                   onClick={() => handleNav("#projects")}
-                  className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-medium text-sm hover:bg-primary/90 transition-colors"
+                  className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-sm font-medium text-sm hover:bg-primary/90 transition-colors"
                 >
                   View Projects
                   <ArrowRight size={15} />
                 </button>
                 <button
                   onClick={() => handleNav("#contact")}
-                  className="flex items-center gap-2 px-6 py-3 rounded-xl border border-border text-muted-foreground text-sm font-medium hover:border-primary/40 hover:text-foreground transition-colors"
+                  className="flex items-center gap-2 px-6 py-3 rounded-sm border border-border text-muted-foreground text-sm font-medium hover:border-primary/40 hover:text-foreground transition-colors"
                 >
                   <Mail size={15} />
                   Contact Me
@@ -485,37 +533,33 @@ export default function App() {
             </div>
 
             {/* Right — profile + stats */}
-            <div className="flex flex-col items-center lg:items-end gap-6">
+            <div className="flex flex-col items-center md:items-end gap-6">
               {/* Profile placeholder */}
-              <div className="relative">
-                <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl bg-card border border-border overflow-hidden flex items-center justify-center">
+              <div className="relative w-full max-w-[440px]">
+                <div className="aspect-[4/5] max-h-[520px] bg-secondary overflow-hidden flex items-center justify-center">
                   <img
                     src="simon.png"
                     alt="Simon Emmanuel Madalla — professional headshot"
-                    className="w-full h-full object-cover opacity-80"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent" />
                 </div>
-                {/* Floating badge */}
-                <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-xl px-4 py-3 shadow-xl">
-                  <p className="font-mono text-xs text-muted-foreground mb-0.5">Current Focus</p>
-                  <p className="text-sm font-semibold text-primary flex items-center gap-1.5">
-                    <Shield size={13} /> Cybersecurity
-                  </p>
+                <div className="absolute -bottom-5 -left-5 max-w-[230px] bg-accent px-4 py-3 text-white">
+                  <p className="font-mono text-xs mb-1">RECOGNITION · 2026</p>
+                  <p className="text-sm font-semibold">Nascomsoft Hackathon 2.0</p>
                 </div>
-                <div className="absolute -top-3 -right-3 bg-primary/10 border border-primary/30 rounded-xl px-3 py-2">
-                  <p className="font-mono text-xs text-primary">2+ yrs dev</p>
+                <div className="absolute top-0 right-0 -translate-y-1/2 bg-background border border-border px-3 py-2">
+                  <p className="font-mono text-xs text-primary">2ND RUNNER-UP</p>
                 </div>
               </div>
 
               {/* Stat cards */}
               <div className="grid grid-cols-3 gap-3 w-full max-w-sm">
                 {[
-                  { value: "4+", label: "Live Sites" },
-                  { value: "Cisco", label: "Certified" },
-                  { value: "HTB", label: "Labs" },
+                  { value: "05", label: "Live websites" },
+                  { value: "03", label: "Team projects" },
+                  { value: "03rd", label: "Hackathon place" },
                 ].map(({ value, label }) => (
-                  <div key={label} className="bg-card border border-border rounded-xl p-4 text-center">
+                  <div key={label} className="border-t-2 border-primary py-3 text-center">
                     <p className="text-lg font-bold text-primary font-mono">{value}</p>
                     <p className="text-xs text-muted-foreground mt-0.5">{label}</p>
                   </div>
@@ -541,25 +585,21 @@ export default function App() {
                 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 leading-tight"
                 style={{ fontFamily: "'Space Grotesk', sans-serif" }}
               >
-                Developer &amp; <span className="text-primary">Security</span>
-                <br />Practitioner
+                Developer &amp; <span className="text-primary">Product</span>
+                <br />Builder
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I began my journey in web development — building responsive, functional websites for real businesses.
-                Over time I developed a fascination with how digital systems can be exploited, and more importantly,
-                how they can be defended.
+                I started in web development, building responsive websites for businesses and practical digital products with other developers.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Today I sit at the intersection of development and security. I build digital solutions with a
-                security-first mindset, and I am actively pursuing structured cybersecurity training,
-                certifications, and hands-on lab work to make that transition complete.
+                I continue to grow through team projects, hands-on product work, and structured learning in networking and cybersecurity.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { label: "Base", value: "Nigeria" },
-                  { label: "Focus", value: "Cybersecurity" },
-                  { label: "Background", value: "Web Development" },
-                  { label: "Goal", value: "Security Engineering" },
+                  { label: "Focus", value: "Digital Products" },
+                  { label: "Experience", value: "Web Development" },
+                  { label: "Learning", value: "Cybersecurity" },
                 ].map(({ label, value }) => (
                   <div key={label} className="bg-secondary rounded-xl px-4 py-3 border border-border">
                     <p className="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-1">{label}</p>
@@ -577,7 +617,7 @@ export default function App() {
                 Learning Journey
               </h3>
               <div className="relative pl-6 border-l border-border space-y-8">
-                {JOURNEY.slice(0, 4).map((item, i) => (
+                {JOURNEY.map((item, i) => (
                   <div key={i} className="relative">
                     <div className={`absolute -left-[1.6rem] top-1 w-3 h-3 rounded-full border-2 ${
                       item.done ? "border-primary bg-primary/30" : "border-border bg-background"
@@ -647,6 +687,116 @@ export default function App() {
             {PROJECTS.map(project => (
               <ProjectCard key={project.title} project={project} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── RECOGNITION ────────────────────────────────── */}
+      <section id="achievements" className="py-24 border-t border-border bg-secondary/60">
+        <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center">
+          <div className="max-w-2xl">
+            <SectionLabel>Recognition · 2026</SectionLabel>
+            <h2
+              className="text-4xl md:text-5xl font-bold leading-tight mb-5"
+              style={{ fontFamily: "'Playfair Display', serif" }}
+            >
+              A local-commerce idea, built as a team.
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              Squadlink is a digital local-commerce platform developed with my team for Nascomsoft Hackathon 2.0. We earned 2nd Runner-Up, placing third overall.
+            </p>
+            <div className="flex flex-wrap gap-5">
+              <a className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent" href="https://quadlink-frontend.vercel.app/" target="_blank" rel="noopener noreferrer">
+                Visit Squadlink <ExternalLink size={14} />
+              </a>
+              <a className="inline-flex items-center gap-2 text-sm font-semibold text-primary hover:text-accent" href="https://github.com/zumunchiYohanna/Hackathon-project" target="_blank" rel="noopener noreferrer">
+                Explore the team repository <Github size={14} />
+              </a>
+            </div>
+          </div>
+          <figure className="relative m-0">
+            <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+              <img
+                src={`${import.meta.env.BASE_URL}previews/squadlink-scenery.jpg`}
+                alt="Campus and delivery rider artwork from the Squadlink project repository"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 to-transparent px-6 pb-6 pt-16 text-white">
+                <p className="font-mono text-xs tracking-widest">NASCOMSOFT HACKATHON 2.0 · 10 OCT 2026</p>
+                <p className="mt-2 text-3xl font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>2nd Runner-Up</p>
+                <p className="text-sm text-white/80">Third place · Squadlink team</p>
+              </div>
+            </div>
+            <figcaption className="mt-2 text-xs text-muted-foreground">Squadlink project artwork. The team award photo is not yet available in the project files.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      {/* ── COLLABORATIONS ────────────────────────────── */}
+      <section id="contributions" className="py-24 border-t border-border">
+        <div className="max-w-6xl mx-auto px-6">
+          <SectionLabel>Team Contributions</SectionLabel>
+          <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 items-start">
+            <div>
+              <h2
+                className="text-4xl md:text-5xl font-bold tracking-tight leading-tight mb-5"
+                style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+              >
+                Built <span className="text-primary">together</span>
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Alongside independent projects, I have contributed to collaborative platform work with other developers.
+              </p>
+            </div>
+            <div>
+              <div className="grid md:grid-cols-2 gap-5">
+                {COLLABORATIONS.filter(project => project.image).map(project => (
+                  <article key={project.title} className="min-w-0 border border-border bg-card">
+                    <div className="relative aspect-[16/10] overflow-hidden bg-secondary">
+                      <img
+                        src={`${import.meta.env.BASE_URL}${project.image}`}
+                        alt={project.imageAlt || `${project.title} project preview`}
+                        className="h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                      <span className={`absolute left-3 top-3 bg-background/95 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider ${project.liveAvailable ? "text-primary" : "text-accent"}`}>
+                        {project.status}
+                      </span>
+                    </div>
+                    <div className="p-5">
+                      <h3 className="text-xl font-semibold text-foreground" style={{ fontFamily: "'Playfair Display', serif" }}>{project.title}</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{project.desc}</p>
+                      <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3">
+                        {project.liveAvailable && project.liveUrl ? (
+                          <a className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-accent" href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                            View live platform <ExternalLink size={12} />
+                          </a>
+                        ) : (
+                          <span className="text-xs font-medium text-accent">Provided deployment URL currently returns 404</span>
+                        )}
+                        <a className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground" href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                          Source repository <Github size={13} />
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
+              {COLLABORATIONS.filter(project => !project.image).map(project => (
+                <article key={project.title} className="mt-5 flex flex-col gap-3 border-t border-border py-5 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                      <h3 className="text-lg font-semibold text-foreground" style={{ fontFamily: "'Playfair Display', serif" }}>{project.title}</h3>
+                      <span className="font-mono text-xs text-muted-foreground">{project.status}</span>
+                    </div>
+                    <p className="mt-1 text-sm text-muted-foreground">{project.desc}</p>
+                  </div>
+                  <a className="inline-flex shrink-0 items-center gap-1.5 text-xs font-semibold text-primary hover:text-accent" href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                    Source repository <Github size={13} />
+                  </a>
+                </article>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -721,13 +871,13 @@ export default function App() {
       {/* ── CERTIFICATIONS ─────────────────────────────── */}
       <section id="certifications" className="py-28 border-t border-border">
         <div className="max-w-6xl mx-auto px-6">
-          <SectionLabel>Certifications</SectionLabel>
+          <SectionLabel>Training</SectionLabel>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
             <h2
               className="text-4xl md:text-5xl font-bold tracking-tight leading-tight"
               style={{ fontFamily: "'Space Grotesk', sans-serif" }}
             >
-              Verified <span className="text-primary">Credentials</span>
+              Courses &amp; <span className="text-primary">Credentials</span>
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -862,18 +1012,18 @@ export default function App() {
       <footer className="border-t border-border py-10">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-7 h-7 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center">
-              <Shield size={13} className="text-primary" />
+            <div className="w-7 h-7 border border-primary/30 flex items-center justify-center">
+              <span className="font-serif text-primary">S</span>
             </div>
             <div>
               <p className="text-sm font-semibold text-foreground" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 Simon Emmanuel Madalla
               </p>
-              <p className="font-mono text-xs text-muted-foreground">Cybersecurity · Development · Technology</p>
+              <p className="font-mono text-xs text-muted-foreground">Digital Products · Development · Lifelong Learning</p>
             </div>
           </div>
           <p className="font-mono text-xs text-muted-foreground/50">
-            © 2025 — Built with purpose and precision
+            © 2026 — Built with purpose and precision
           </p>
           <div className="flex items-center gap-3">
             {[
