@@ -538,7 +538,7 @@ export default function App() {
               <div className="relative w-full max-w-[440px]">
                 <div className="aspect-[4/5] max-h-[520px] bg-secondary overflow-hidden flex items-center justify-center">
                   <img
-                    src="simon.png"
+                    src={`${import.meta.env.BASE_URL}simon.png`}
                     alt="Simon Emmanuel Madalla — professional headshot"
                     className="w-full h-full object-cover"
                   />
