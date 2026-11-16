@@ -2,59 +2,60 @@
 
 Computer Science undergraduate with interests in AI systems engineering, software development, cybersecurity, and practical technology for real-world problems.
 
-I build systems that combine software engineering fundamentals with emerging AI and security thinking. My work reflects a growing interest in intelligent systems, reliable software architecture, secure application design, and collaborative technical problem solving.
+I build technology with software engineering fundamentals and an interest in intelligent systems, software architecture, secure design, and collaborative problem solving. This portfolio distinguishes my individual public projects from work developed with teams.
 
 ## Technical interests
 
-- AI systems and intelligent software
-- AI agents and tool-using applications
-- Local and open-source AI workflows
-- Cybersecurity and secure software thinking
+- AI systems, agents, and tool-using applications
+- Local and open-source LLM workflows
+- Cybersecurity and secure software development
 - Backend engineering and software architecture
+- Responsible AI, governance, and deployment
 - Collaborative technology development
-- Responsible and practical deployment of emerging technologies
 
-## Featured projects
+## Selected public projects
 
-- [GoodAngel D Travel and Tour](https://dev-simon-em.github.io/GoodAngel-D-Travel-and-Tour/)  
-  Multi-page travel and study-abroad website focused on service presentation, destination information, and user guidance.
+- [GoodAngel D Travel and Tour](https://github.com/dev-Simon-EM/GoodAngel-D-Travel-and-Tour) — multi-page static website for travel, tourism, and study-abroad service information.
+- [Dall-Tech](https://github.com/dev-Simon-EM/Dall-Tech) — React and TypeScript front-end concept for a technology services brand; backend and operational security services are not implemented in this repository.
+- [Dall-Global-Ventures](https://github.com/dev-Simon-EM/Dall-Global-Ventures) — front-end business presentation concept for an agricultural venture.
+- [Heavens Gate Atelier](https://github.com/dev-Simon-EM/heavens-gate-atelier) — React and TypeScript boutique/atelier website.
 
-- [Dall-Global-Ventures](https://dev-simon-em.github.io/Dall-Global-Ventures/)  
-  Front-end concept site for an agricultural and supply-focused venture.
+## Collaborative projects
 
-- [Dall-Tech](https://dev-simon-em.github.io/Dall-Tech/)  
-  Technology services landing page focused on cybersecurity, web development, and digital transformation messaging.
+I contributed as a major collaborator to the following team projects. These repositories are owned by their respective teams; the links point to the source repositories, not to projects I claim to have built alone.
 
-- [Heavens Gate Atelier](https://dev-simon-em.github.io/heavens-gate-atelier/)  
-  Boutique and service-focused landing page with a polished front-end design.
+- [Zes AI Companion](https://github.com/zumunchiYohanna/Zes-Ai-Companion) — collaborative local AI assistant project. Its documented design uses Ollama for local inference, persistent conversations and explicitly saved memories, and permission-checked read-only access to an authorized test directory. The repository is private, so access depends on GitHub permissions.
+- [SquadLink — team repository](https://github.com/zumunchiYohanna/Hackathon-project) — collaborative local-commerce and fulfilment platform concept connecting customers, businesses, riders, and administrators. The team README describes ongoing backend architecture and MVP development; it should not be read as evidence that the full workflow is deployed.
+- [SAZU Study Hub](https://github.com/wisdomdanladi01-hash/sazu-study-hub) — collaborative student learning-resource platform with a React/TypeScript/Vite frontend and FastAPI backend. The team documentation describes academic resources, verification, subscriptions, and sandbox payment flows, and also identifies incomplete assessment APIs and other remaining work. Live payments are not documented as enabled.
 
-## Technical stack
+## Work in progress
 
-### Programming languages
-- JavaScript
-- TypeScript
-- HTML
-- CSS
+- **AI Forex Analysis Agents** — local project, not yet published on GitHub. The planned portfolio description should distinguish market-data retrieval and chart analysis from any trade execution; implementation details and agent autonomy have not yet been reviewed here.
+- **Dall Tech Virtual Universe** — long-term concept initiative. The virtual-universe vision is separate from the Dall-Tech services website above; no public implementation repository has been verified for it.
 
-### Frontend
-- React
-- Vite
-- Responsive web design
-- Component-based UI development
+## Technologies evidenced in accessible project repositories
 
-### Backend and infrastructure
+### Programming and frontend
+- JavaScript, TypeScript, HTML, and CSS
+- React and Vite
+- Responsive web development
+
+### Backend and data in collaborative projects
+- Python and FastAPI (SAZU Study Hub)
+- PostgreSQL (SAZU Study Hub documentation)
+- Node.js built-in HTTP and SQLite (Zes AI Companion documentation)
+
+### AI and security interests
+- Ollama local inference and permission boundaries (Zes AI Companion)
+- Secure software design and cybersecurity are professional interests; production security services are not claimed based on the marketing-site prototypes.
+
+### Tools
 - Git and GitHub
 - npm and pnpm
-- Local development workflows
 
-### Security and systems
-- Secure software thinking
-- Security-aware frontend design
-- Cybersecurity and systems awareness
+## Collaboration and knowledge sharing
 
-## Leadership and knowledge sharing
-
-I enjoy collaborating with others, coordinating technical work, identifying individual strengths, and helping others learn by making technical concepts easier to understand. My approach to team work is grounded in communication, responsibility sharing, and practical delivery.
+I value coordinating collaborative development, recognizing team strengths, sharing responsibilities, and helping other learners understand technical concepts. Project ownership and individual contributions vary; team repositories are identified as collaborative work rather than presented as solo projects.
 
 ## Education
 
@@ -62,16 +63,8 @@ Computer Science undergraduate.
 
 ## Professional interests
 
-- AI governance and responsible AI deployment
-- Cybersecurity and secure systems
-- Intelligent systems design
-- Software engineering and architecture
-- Ethical and practical technology innovation
+AI governance, technical AI safety, cybersecurity, intelligent systems, software architecture, and responsible AI deployment.
 
 ## Contact
 
 - GitHub: [dev-Simon-EM](https://github.com/dev-Simon-EM)
-
-## Notes
-
-This portfolio reflects a collection of accessible public work and concept sites demonstrating my current technical direction, front-end development skills, and growing interest in AI, software engineering, and cybersecurity.
