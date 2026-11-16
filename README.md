@@ -1,47 +1,74 @@
+# Emmanuel Madalla Simon | Portfolio
 
- # Simon Emmanuel Madalla | Portfolio
+I am a Computer Science undergraduate with interests in AI systems engineering, software development, cybersecurity, and practical technology for real-world problems. This portfolio showcases my web development work, technology experiments, and collaborative projects in a way that reflects my current stage as a learner and emerging software engineer.
 
- Personal portfolio for Simon Emmanuel Madalla, bringing together live web projects, development experience, and a growing focus on cybersecurity and networking.
+## About
 
- ## Live Portfolio
+This repository serves as a professional portfolio for my work across front-end development, digital product concepts, and technology exploration. The projects here emphasise clarity, usability, documentation, and a growing interest in secure and intelligent software systems.
 
- <https://dev-simon-em.github.io/Personal-Portfolio/>
+## Technical interests
 
- ## Featured Work
+- AI systems and intelligent software
+- AI agents and tool-using applications
+- Local and open-source AI workflows
+- Cybersecurity and secure software thinking
+- Backend engineering and software architecture
+- Collaborative technology development
+- Responsible and practical deployment of emerging technologies
 
- - [GoodAngel D Travel and Tour](https://dev-simon-em.github.io/GoodAngel-D-Travel-and-Tour/) — travel, tours, and study-abroad website.
- - [Dall Global Ventures](https://dev-simon-em.github.io/Dall-Global-Ventures/) — agricultural trading and supply website.
- - [Dall Tech](https://dev-simon-em.github.io/Dall-Tech/) — technology and cybersecurity services website.
- - [Heavens Gate Atelier](https://dev-simon-em.github.io/heavens-gate-atelier/) — fashion atelier services and enquiries website.
- - [Portfolio](https://dev-simon-em.github.io/Personal-Portfolio/) — this portfolio.
+## Featured work
 
-## Team Projects
+- [GoodAngel D Travel and Tour](https://dev-simon-em.github.io/GoodAngel-D-Travel-and-Tour/) — multi-page travel and study-abroad website focused on service presentation and user guidance.
+- [Dall-Global-Ventures](https://dev-simon-em.github.io/Dall-Global-Ventures/) — concept site for an agro-business and supply-focused venture.
+- [Dall-Tech](https://dev-simon-em.github.io/Dall-Tech/) — technology and cyber-themed landing page / concept site.
+- [Heavens Gate Atelier](https://dev-simon-em.github.io/heavens-gate-atelier/) — fashion and boutique service website.
 
-- [Squadlink](https://quadlink-frontend.vercel.app/) — digital local-commerce platform; [team repository](https://github.com/zumunchiYohanna/Hackathon-project). The provided Vercel URL currently returns `DEPLOYMENT_NOT_FOUND`. The team earned 2nd Runner-Up (3rd place) at Nascomsoft Hackathon 2.0 on 10 October 2026.
-- [Sazu Study Hub](https://sazu-study-hub.vercel.app/) — collaborative learning platform; [team repository](https://github.com/wisdomdanladi01-hash/sazu-study-hub).
-- Zes AI Companion — collaborative project not yet hosted live; [team repository](https://github.com/zumunchiYohanna/Zes-Ai-Companion).
+## Project status
 
-This portfolio also presents skills, a learning timeline, training, and contact links.
+This portfolio is a curated collection of accessible public work and concept sites. It is intended to communicate current skills and direction rather than imply a completed portfolio of production-grade systems.
 
- ## Built With
+## Technical stack
 
- - React and TypeScript
- - Vite
- - Tailwind CSS
- - Lucide icons
+### Frontend
+- React
+- TypeScript
+- Vite
+- HTML5
+- CSS
+- JavaScript
 
- ## Run Locally
+### Tools
+- Git and GitHub
+- npm / pnpm
+- VS Code
 
- Requires Node.js and pnpm (or npm).
+## How to run locally
 
- ```sh
- pnpm install
- pnpm run dev
- ```
+Requirements:
+- Node.js
+- npm or pnpm
 
- Build the static site with:
+```bash
+pnpm install
+pnpm run dev
+```
 
- ```sh
- pnpm run build
- ```
-  
+To build the project:
+
+```bash
+pnpm run build
+```
+
+## Notes
+
+- This repository is primarily a portfolio and showcase site.
+- Some projects referenced here are concept sites or front-end prototypes rather than full production systems.
+- The goal is to present practical work, design thinking, and iterative learning clearly and honestly.
+
+## Contact
+
+- GitHub: [dev-Simon-EM](https://github.com/dev-Simon-EM)
+
+## Professional direction
+
+I am building toward opportunities in AI systems engineering, software engineering, cybersecurity, and collaborative technical problem solving. My focus is on creating systems that are useful, secure, and technically credible.
