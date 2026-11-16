@@ -1,10 +1,8 @@
-# Emmanuel Madalla Simon | Portfolio
+# Emmanuel Madalla Simon
 
-I am a Computer Science undergraduate with interests in AI systems engineering, software development, cybersecurity, and practical technology for real-world problems. This portfolio showcases my web development work, technology experiments, and collaborative projects in a way that reflects my current stage as a learner and emerging software engineer.
+Computer Science undergraduate with interests in AI systems engineering, software development, cybersecurity, and practical technology for real-world problems.
 
-## About
-
-This repository serves as a professional portfolio for my work across front-end development, digital product concepts, and technology exploration. The projects here emphasise clarity, usability, documentation, and a growing interest in secure and intelligent software systems.
+I build systems that combine software engineering fundamentals with emerging AI and security thinking. My work reflects a growing interest in intelligent systems, reliable software architecture, secure application design, and collaborative technical problem solving.
 
 ## Technical interests
 
@@ -16,59 +14,64 @@ This repository serves as a professional portfolio for my work across front-end 
 - Collaborative technology development
 - Responsible and practical deployment of emerging technologies
 
-## Featured work
+## Featured projects
 
-- [GoodAngel D Travel and Tour](https://dev-simon-em.github.io/GoodAngel-D-Travel-and-Tour/) — multi-page travel and study-abroad website focused on service presentation and user guidance.
-- [Dall-Global-Ventures](https://dev-simon-em.github.io/Dall-Global-Ventures/) — concept site for an agro-business and supply-focused venture.
-- [Dall-Tech](https://dev-simon-em.github.io/Dall-Tech/) — technology and cyber-themed landing page / concept site.
-- [Heavens Gate Atelier](https://dev-simon-em.github.io/heavens-gate-atelier/) — fashion and boutique service website.
+- [GoodAngel D Travel and Tour](https://dev-simon-em.github.io/GoodAngel-D-Travel-and-Tour/)  
+  Multi-page travel and study-abroad website focused on service presentation, destination information, and user guidance.
 
-## Project status
+- [Dall-Global-Ventures](https://dev-simon-em.github.io/Dall-Global-Ventures/)  
+  Front-end concept site for an agricultural and supply-focused venture.
 
-This portfolio is a curated collection of accessible public work and concept sites. It is intended to communicate current skills and direction rather than imply a completed portfolio of production-grade systems.
+- [Dall-Tech](https://dev-simon-em.github.io/Dall-Tech/)  
+  Technology services landing page focused on cybersecurity, web development, and digital transformation messaging.
+
+- [Heavens Gate Atelier](https://dev-simon-em.github.io/heavens-gate-atelier/)  
+  Boutique and service-focused landing page with a polished front-end design.
 
 ## Technical stack
 
+### Programming languages
+- JavaScript
+- TypeScript
+- HTML
+- CSS
+
 ### Frontend
 - React
-- TypeScript
 - Vite
-- HTML5
-- CSS
-- JavaScript
+- Responsive web design
+- Component-based UI development
 
-### Tools
+### Backend and infrastructure
 - Git and GitHub
-- npm / pnpm
-- VS Code
+- npm and pnpm
+- Local development workflows
 
-## How to run locally
+### Security and systems
+- Secure software thinking
+- Security-aware frontend design
+- Cybersecurity and systems awareness
 
-Requirements:
-- Node.js
-- npm or pnpm
+## Leadership and knowledge sharing
 
-```bash
-pnpm install
-pnpm run dev
-```
+I enjoy collaborating with others, coordinating technical work, identifying individual strengths, and helping others learn by making technical concepts easier to understand. My approach to team work is grounded in communication, responsibility sharing, and practical delivery.
 
-To build the project:
+## Education
 
-```bash
-pnpm run build
-```
+Computer Science undergraduate.
 
-## Notes
+## Professional interests
 
-- This repository is primarily a portfolio and showcase site.
-- Some projects referenced here are concept sites or front-end prototypes rather than full production systems.
-- The goal is to present practical work, design thinking, and iterative learning clearly and honestly.
+- AI governance and responsible AI deployment
+- Cybersecurity and secure systems
+- Intelligent systems design
+- Software engineering and architecture
+- Ethical and practical technology innovation
 
 ## Contact
 
 - GitHub: [dev-Simon-EM](https://github.com/dev-Simon-EM)
 
-## Professional direction
+## Notes
 
-I am building toward opportunities in AI systems engineering, software engineering, cybersecurity, and collaborative technical problem solving. My focus is on creating systems that are useful, secure, and technically credible.
+This portfolio reflects a collection of accessible public work and concept sites demonstrating my current technical direction, front-end development skills, and growing interest in AI, software engineering, and cybersecurity.
